@@ -3,15 +3,35 @@
 }
 .grid-container {
     display: grid;
+    grid-template-columns: 10% auto;
     grid-template-areas:
-    "header header"
+    "navbar navbar"
     "sidebar main"
-    "footer";
-    gap: 10px;
+    "footer footer";
+    width: 100%;
     }
+    
 .navbar{
+grid-area: navbar;
 background-color: #4845ad;
-padding: 1%;
 text-align: center;
 width: 100%;
+}
+.sidebar {
+    background-color: #917b7b76;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0%;
+    height: 100vh;
+}
+
+.main {
+    background-color: bisque;
+    grid-area: main;
+}
+.footer {
+    background-color: bisque;
+    grid-area: footer;
 }
