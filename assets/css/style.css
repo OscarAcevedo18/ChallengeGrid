@@ -6,7 +6,7 @@
     grid-template-areas:
     "header header"
     "sidebar main"
-    "footer"
+    "footer";
     gap: 10px;
     }
 .navbar{
