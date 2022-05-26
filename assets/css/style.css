@@ -7,7 +7,7 @@
     "navbar navbar"
     "sidebar main"
     "footer footer";
-    grid-template-columns: 13% 87%;
+    grid-template-columns: 15% auto;
     height: 100vh;
     }
     
