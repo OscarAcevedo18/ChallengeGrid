@@ -3,33 +3,75 @@
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 10% auto;
     grid-template-areas:
     "navbar navbar"
     "sidebar main"
     "footer footer";
-    width: 100%;
+    grid-template-columns: 13% 87%;
+    height: 100vh;
     }
     
 .navbar{
+display: grid;
 grid-area: navbar;
 background-color: #4845ad;
 text-align: center;
 width: 100%;
+color: aliceblue;
 }
 .sidebar {
+    display: grid;
     background-color: #917b7b76;
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0%;
-    height: 100vh;
+}
+span {
+color: #6c6a6a;
 }
 
 .main {
-    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #917b7b76;
     grid-area: main;
+    gap: 1rem;
+    padding-top: 1.5%;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0%;
+    }
+    
+    .price {
+        background-color: white;
+        color: #474646;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+
+.items button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3.5%;
+    background-color:#4845ad;
+    color: white;
+    width: 100%;
 }
 .footer {
     background-color: bisque;
