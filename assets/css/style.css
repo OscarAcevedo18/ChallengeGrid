@@ -1,17 +1,82 @@
 .html, body{
     margin: 0%;
+    padding: 0%;
+    background-color: #917b7b76;
 }
 .grid-container {
     display: grid;
     grid-template-areas:
-    "header header"
+    "navbar navbar"
     "sidebar main"
-    "footer"
-    gap: 10px;
+    "footer footer";
+    grid-template-columns: 15% auto;
+    height: 100vh;
     }
+    
 .navbar{
+display: grid;
+grid-area: navbar;
 background-color: #4845ad;
-padding: 1%;
 text-align: center;
 width: 100%;
+color: aliceblue;
+}
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0%;
+}
+span {
+color: #6c6a6a;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: main;
+    gap: 1rem;
+    padding-top: 1.5%;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0%;
+    }
+    
+    .price {
+        background-color: white;
+        color: #474646;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+
+.items button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3.5%;
+    background-color:#4845ad;
+    color: white;
+    width: 100%;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: aliceblue;
+    grid-area: footer;
 }
