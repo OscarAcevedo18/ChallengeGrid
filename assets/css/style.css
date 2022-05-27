@@ -1,5 +1,7 @@
 .html, body{
     margin: 0%;
+    padding: 0%;
+    background-color: #917b7b76;
 }
 .grid-container {
     display: grid;
@@ -21,7 +23,6 @@ color: aliceblue;
 }
 .sidebar {
     display: grid;
-    background-color: #917b7b76;
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
@@ -35,7 +36,6 @@ color: #6c6a6a;
 .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #917b7b76;
     grid-area: main;
     gap: 1rem;
     padding-top: 1.5%;
@@ -74,6 +74,9 @@ color: #6c6a6a;
     width: 100%;
 }
 .footer {
-    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: aliceblue;
     grid-area: footer;
 }
