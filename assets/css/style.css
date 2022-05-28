@@ -14,12 +14,12 @@
     }
     
 .navbar{
-display: grid;
 grid-area: navbar;
 background-color: #4845ad;
 text-align: center;
 width: 100%;
 color: aliceblue;
+font-family: 'Marmelad', sans-serif;
 }
 .sidebar {
     display: grid;
@@ -28,6 +28,7 @@ color: aliceblue;
     flex-direction: column;
     text-align: center;
     margin: 0%;
+    font-family: 'Exo 2', sans-serif;
 }
 span {
 color: #6c6a6a;
@@ -39,7 +40,7 @@ color: #6c6a6a;
     grid-area: main;
     gap: 1rem;
     padding-top: 1.5%;
-    width: 100%;
+    font-family: 'Cabin', sans-serif;
 }
 
 .product {
@@ -51,7 +52,6 @@ color: #6c6a6a;
     }
     
     .price {
-        background-color: white;
         color: #474646;
     }
 
@@ -79,4 +79,5 @@ color: #6c6a6a;
     margin-top: 1rem;
     background-color: aliceblue;
     grid-area: footer;
+    font-family: 'Marmelad', sans-serif;
 }
