@@ -14,7 +14,6 @@
     }
     
 .navbar{
-display: grid;
 grid-area: navbar;
 background-color: #4845ad;
 text-align: center;
@@ -41,7 +40,6 @@ color: #6c6a6a;
     grid-area: main;
     gap: 1rem;
     padding-top: 1.5%;
-    width: 100%;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -54,7 +52,6 @@ color: #6c6a6a;
     }
     
     .price {
-        background-color: white;
         color: #474646;
     }
 
